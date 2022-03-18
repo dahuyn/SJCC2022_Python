@@ -48,14 +48,10 @@ for elem in birthdayList:
 #print("Jocelyn Jones's birthday is: " + birthdayDictionary["Jocelyn Jones"])
 
 # to get user input
-#name = input("Enter a name:")
-#print("name = " + name)
-#print("birthday = " + birthdayDictionary[name])
-
 try:
     name = input("Enter a name:")
     print("name = " + name)
     print("birthday = " + birthdayDictionary[name])
 except:
     name = False
-    print("Oops")
+    print("Lupe does not have any friends with the name.")
