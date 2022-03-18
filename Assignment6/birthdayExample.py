@@ -38,16 +38,24 @@ for elem in birthdayList:
     name = elem["name"]
     birthday = elem["birthday"]
 
-    print("name = " + name)
-    print("birthday = " + birthday)
+    #print("name = " + name)
+    #print("birthday = " + birthday)
 
     birthdayDictionary[name] = birthday
 
 
 # to print a value in the dictionary by giving it a string with the name as the key
-print("Jocelyn Jones's birthday is: " + birthdayDictionary["Jocelyn Jones"])
+#print("Jocelyn Jones's birthday is: " + birthdayDictionary["Jocelyn Jones"])
 
 # to get user input
-name = input("Enter a name:")
-print("name = " + name)
-print("birthday = " + birthdayDictionary[name])
+#name = input("Enter a name:")
+#print("name = " + name)
+#print("birthday = " + birthdayDictionary[name])
+
+try:
+    name = input("Enter a name:")
+    print("name = " + name)
+    print("birthday = " + birthdayDictionary[name])
+except:
+    name = False
+    print("Oops")
